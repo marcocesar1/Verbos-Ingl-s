@@ -87,7 +87,7 @@ function App() {
             label="Simple past"
             variant="standard" 
             value={simplePast}
-            onChange={e => setSimplePast(e.target.value)}
+            onChange={e => setSimplePast(e.target.value.toLowerCase())}
             style={{marginRight: '20px'}}
             autoComplete="off"
           />
@@ -95,7 +95,7 @@ function App() {
             label="Participle past"
             variant="standard"
             value={participlePast}
-            onChange={e => setParticiplePast(e.target.value)}
+            onChange={e => setParticiplePast(e.target.value.toLowerCase())}
           />
           <div style={{marginTop: '30px'}}>
             <Button onClick={() => setShowAnswer(true)} variant="outlined">Mostrar respuesta</Button>
